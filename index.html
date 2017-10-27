@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+	<head>
+		<title>G7EMYADMIN</title>
+		<meta charset="utf-8"/>
+		<link type="text/css" rel="stylesheet" href="style.css"/>
+		<link rel="shortcut icon" href="g7e.ico"/>
+		<script src="login.js"></script>
+	</head>
+	<body>
+		<div class="logo">
+			<img src="g7emyadmin.png"/>
+		</div>	
+		<div class="loginbox">
+			<form id="form">
+				<input id="username" type="text" />
+				<input id="password" type="password" />
+				<button type="button" onclick="getInfo()" id="loginbutton">Login</button>
+			</form>
+		</div>
+		<ul>
+  			<li><a class="active" href="index.html">Home</a></li>
+  			<li><a href="news.html">News</a></li>
+  			<li><a href="contact.html">Contact</a></li>
+  			<li><a href="about.html">About</a></li>
+		</ul>
+		<div class="news">
+			<h2 style="color: black; text-align: center;">Welcome to g7emyadmin!</h2>
+			<hr><br>
+			<div class="newsheader">
+				<a href="news.html" style="text-decoration: none; color: red;">
+					<h3 id="newslink">News</h3>
+				</a>
+			</div>
+			<div class="newstext">
+				<p>
+					Hi friends...<br><span style="color:red;">g7emyadmin</span>
+					0.1 were just released in an alpha version.
+					I'm open to any feedback or wishes for the site. I mean it's more a social network
+					than a normal site. But login data is only available for members of the G7e.
+					The chat can be used by anyone so you don't need special permissions.
+				</p>
+			</div>	
+		</div>
+		<div class="languageselection">
+			<select onChange="window.location.href=this.value">
+  				<option value="indexenglish.html">English</option>
+  				<option value="indexgerman.html">German</option>
+  			</select>
+		</div>
+	</body>
+</html>

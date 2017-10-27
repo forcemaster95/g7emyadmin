@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+   <head>
+      <title>G7EMYADMIN | English</title>
+      <meta charset="utf-8"/>
+      <link type="text/css" rel="stylesheet" href="style.css"/>
+      <link rel="shortcut icon" href="g7e.ico"/>
+      <script src="login.js"></script>
+   </head>
+   <body>
+      <div class="logo">
+         <img src="g7emyadmin.png"/>
+      </div>   
+      <div class="loginbox">
+         <form id="form">
+            <input id="username" type="text" />
+            <input id="password" type="password" />
+            <button type="button" onclick="getInfo()" id="loginbutton">Login</button>
+         </form>
+      </div>
+      <ul>
+           <li><a class="active" href="index.html">Home</a></li>
+           <li><a href="news.html">News</a></li>
+           <li><a href="contact.html">Contact</a></li>
+           <li><a href="about.html">About</a></li>
+      </ul>
+      <div class="news">
+         <h2 style="color: black; text-align: center;">Bienvenue à g7emyadmin!/h2>
+         <hr><br>
+         <div class="newsheader">
+            <a href="news.html" style="text-decoration: none; color: red;">
+               <h3 id="newslink">News</h3>
+            </a>
+         </div>
+         <div class="newstext">
+            <p>
+               Salut les amis...<br><span style="color:red;">g7emyadmin</span>
+               0.1 vient de sortir dans une version bêta.
+               Je suis ouvert à tout commentaire ou souhait pour le site. Je veux dire que c'est plus un réseau social
+               qu'un site normal. Mais les données de connexion ne sont disponibles que pour les membres du G7e.
+               Le chat peut être utilisé par n'importe qui, donc vous n'avez pas besoin d'autorisations spéciales.
+            </p>
+         </div>   
+      </div>
+      <div class="languageselection">
+         <select onChange="window.location.href=this.value">
+              <option value="indexenglish.html">English</option>
+              <option value="indexgerman.html">German</option>
+              <option value="indexfrench.html">French</option>
+           </select>
+      </div>
+   </body>
+</html>

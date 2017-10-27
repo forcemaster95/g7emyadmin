@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+	<head>
+		<title>G7EMYADMIN | Deutsch</title>
+		<meta charset="utf-8"/>
+		<link type="text/css" rel="stylesheet" href="style.css"/>
+		<link rel="shortcut icon" href="g7e.ico"/>
+		<script src="login.js"></script>
+	</head>
+	<body>
+		<div class="logo">
+			<img src="g7emyadmin.png"/>
+		</div>	
+		<div class="loginbox">
+			<form id="form">
+				<input id="username" type="text" />
+				<input id="password" type="password" />
+				<button type="button" onclick="getInfo()" id="loginbutton">Login</button>
+			</form>
+		</div>
+		<ul>
+  			<li><a class="active" href="index.html">Home</a></li>
+  			<li><a href="news.html">News</a></li>
+  			<li><a href="contact.html">Contact</a></li>
+  			<li><a href="about.html">About</a></li>
+		</ul>
+		<div class="news">
+			<h2 style="color: black; text-align: center;">Willkommen bei g7emyadmin!</h2>
+			<hr><br>
+			<div class="newsheader">
+				<a href="news.html" style="text-decoration: none; color: red;">
+					<h3 id="newslink">News</h3>
+				</a>
+			</div>
+			<div class="newstext">
+				<p>
+					Hallo Freunde...<br><span style="color:red;">g7emyadmin</span>
+					0.1 wurde gerade in einer Alphaversion fertiggestellt. 
+					Ich bin offen für jedes Feedback oder jede Wünsche für diese Seite. Dies ist aber mehr ein soziales Netzwerk als eine normale Seite trotzdem sind die jeweiligen Login-Daten nur für G7E-Mitglieder verfügbar. Aber keine Sorge! Ohne spezielle Berechtigungen ist der Chat noch erreichbar...
+				</p>
+			</div>	
+		</div>
+		<div class="languageselection">
+			<select onChange="window.location.href=this.value">
+  				<option value="indexgerman.html">Deutsch</option>	
+  				<option value="indexenglish.html">Englisch</option>
+  			</select>
+		</div>
+	</body>
+</html>
